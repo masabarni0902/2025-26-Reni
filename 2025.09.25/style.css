@@ -1,0 +1,38 @@
+.logo{
+    width: 50px;
+}
+
+nav{
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav a{
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+}
+
+a:hover{
+    color: orangered;
+}
+
+.etel{
+    width: 300px;
+}
+
+figure{
+    background-color: lightgoldenrodyellow;
+    width: 320px;
+}
+
+section{
+    background-color: rgb(185, 163, 87);
+}
