@@ -1,0 +1,56 @@
+.content{
+    width: 80%;
+    background-color: #1a1a1a;
+    color:white;
+}
+
+p{
+    text-align: justify;
+    margin: 20px 0;
+}
+
+h1:hover,h2:hover {
+  color: #FF8C00;
+  text-align: center;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.banner{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.kep{
+    width: 350px;  
+    border: 1px solid #FF8C00;  
+    border-radius: 20px;         
+    margin: 0px 40px 20px 40px; 
+    padding: 10px;               
+    display: inline-block;
+    float: right;
+}
+
+.kep img{
+    width: 350px;             
+    display: block;            
+    border-radius: 20px;
+}
+
+footer{
+    background-color: #4a4a4a;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+span{
+    color: #FF8C00;
+}
+
+a{
+    text-decoration: none;
+}

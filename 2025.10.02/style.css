@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+*{
+    font-family: "Protest Revolution", sans-serif;
+}
+
+body{
+    background-color: #d69871;
+}
+
+nav{
+    text-align: center;
+    background-color: #e36414;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    padding: 20px;
+}
+
+nav a{
+    margin: 10px;
+    color: #fff;
+    
+}
+
+nav a:hover{
+    border-bottom: 3px solid orange;
+    cursor: pointer;
+
+}
+
+.hero img{
+    height: 600px;    
+    width: 100%;
+}
+
+h1,p,h2{
+    color: #0f4c5c;
+}
+
+section{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
+
+span{
+    color: #fff;
+}
+
+table{
+    margin:50px auto;
+    color: #0f4c5c;
+    border: 1px solid #0f4c5c;
+    border-collapse: collapse;
+    width: 700px;
+}
+
+th,tr,td{
+    border: 1px solid #0f4c5c;
+   
+}
+
+.suti{
+    width: 400px;
+}
+
+figure{
+background-color: #e36414;
+padding: 10px;
+border-radius: 40px;
+width: 700px;
+margin: 50px auto;
+ color: #0f4c5c;
+}
+
+figure:hover{
+    opacity: 0.8;
+    transform:scale(1.05);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 10px 10px #0f4c5c;
+   
+}

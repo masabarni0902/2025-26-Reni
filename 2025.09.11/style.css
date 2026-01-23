@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
+
+*{
+
+    font-family: "Eater", serif;
+}
+
+.fokep{
+            height: 400px;
+}
+
+.kepek{
+        width: 300px;
+        border: 3px solid darkblue;
+        border-radius: 300px;
+            
+}
+
+body{
+    background-color: lightblue;
+}
+
+table{
+    width: 800px;
+    margin: 0 auto;
+}
+
+h2{
+    background-color: blue;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.kutyak{
+    background-color: blue;
+    width: 800px;
+    margin: 0 auto;
+    padding: 100px;
+
+}
+
+.orokbefogadas{
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.orokbefogadas,tr,th,td{
+    border: 1px solid black;
+}
+
+h1{
+    text-align: center;
+}
+    
+
+
+        

@@ -1,0 +1,63 @@
+.tartalom{
+    border: 2px solid gray;
+    padding: 10px;
+    background-color: lightblue;
+}
+
+h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.menu{
+    background-color: blue;
+    padding: 5px;
+}
+
+.menu nav ul{
+    list-style: none;
+}
+
+.menu nav li{
+    display: inline-block;
+}
+
+.menu nav a{
+    color: yellow;
+    margin: 0 20px 0 20px;
+    text-decoration: none;
+}
+
+.menu nav a:hover{
+    color: yellowgreen;
+    cursor:pointer;
+}
+
+.auto{
+    float: right;
+    width: 250px;
+}
+
+p{
+    text-align: justify;
+}
+
+.kiemelt{
+    color: red;
+    font-weight: bold;
+}
+
+body{
+    border-top: 3px solid blue;
+    border-right: 6px solid blue;
+    border-bottom: 8px solid blue ;
+    border-left: 3px solid blue;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.forras{
+    text-align: right;
+}

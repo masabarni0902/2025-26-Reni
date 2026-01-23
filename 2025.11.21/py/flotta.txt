@@ -1,0 +1,16 @@
+# Márka	Modell	Év	Fogyasztás (l/100km)	Üzemanyag
+Toyota	Corolla	2018    5.5	Benzin
+Skoda	Octavia	2020	4.2	Dízel
+Ford	Focus	2016	6.1	Benzin
+Nissan	Leaf	2022	0.0	Elektromos
+BMW	    X5	    2019	8.5	Dízel
+Renault	Clio	2015	5.0	Benzin
+Tesla	Model 	2023	0.0	Elektromos
+Kia	    Ceed	2021	4.8	Dízel
+Opel	Corsa	2017	5.8	Benzin
+Volvo	XC90	2020	7.5	Hibrid
+Suzuki	Vitara	2019	6.5	Benzin
+Hyundai	Kona	2022	0.0	Elektromos
+Audi	A4	    2018	5.9	Dízel
+Fiat	500	    2016	4.9	Benzin
+Porsche	Taycan	2023	0.0	Elektromos

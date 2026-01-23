@@ -1,0 +1,45 @@
+h1{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#content{
+    background-color: goldenrod;
+    width: 960px;
+    margin: 0 auto;
+    border-right:solid 10px gold;
+    border-left:solid 10px gold;
+    height: 1000px;
+}
+
+.right{
+    float: right;
+    height: 300px;
+}
+
+.bio{
+    float: left;
+    width: 400px;
+    border: solid 3px yellow;
+    background-color: lightgray;
+}
+
+p{
+    text-align: justify;
+}
+
+a{
+    color: yellow;
+}
+
+a:visited{
+    color: yellow;
+}
+
+a:hover{
+    color: red
+}
+
+p.clr{
+    clear: both;
+}
