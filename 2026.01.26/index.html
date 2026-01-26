@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Első</title>
+</head>
+<body>
+
+    <div id="szoveg"></div>
+    <button onclick="valtozatt()">Kattints ide</button>
+
+    <label>Név:</label>
+    <input type="text" id="nev">
+    <button onclick="nevmegad()">Ok</button>
+
+    <h2 id="n"></h2>
+
+    <script>
+        function valtozatt(){
+            document.getElementById("szöveg").innerHTML="Ez az első js szöveg"
+            document.body.style.color="white"
+            document.body.style.backgroundColor="black"
+        }
+
+        function nevmegad(){
+            let nev= document.getElementById("nev").value
+
+            document.getElementById("n").innerHTML="Szia!" + nev
+        }
+        
+    </script>
+</body>
+</html>
