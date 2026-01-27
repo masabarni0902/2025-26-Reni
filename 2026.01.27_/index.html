@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtubers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="dark-light" onclick="valtoztatt()"><img src="night-mode.png" alt="" style="width: 50px;"></button>
+
+    <h1>Videosok</h1>
+    <select name="" id="videosok">
+        <option value="">--Válassz egyett--</option>
+        <option id="TheVR" value="TheVR">TheVR</option>
+        <option id="Nessaj" value="Nessaj">Nessaj</option>
+        <option id="Suri" value="Suri">Suri</option>
+    </select>
+    <button onclick="valaszt()">Ok</button>
+
+    <h2>Válassztott videós</h2>
+    <div id="kep"></div>
+
+    <form action="" id="videosform">
+        <label for="" id="nev">Név:</label>
+        <input type="text" id="nev">
+        <label for="">Születési dátum:</label>
+        <input type="date" id="szdate">
+        <label for="">Dátum:</label>
+        <input type="datum" id="datum">
+        <select name="" id="idopontok">
+            <option value="">--Válasz egy időpontot--</option>
+            <option value="2026.08.15">2026.08.15</option>
+            <option value="2026.08.16">2026.08.16</option>
+            <option value="2026.08.17">2026.08.17</option>
+        </select>
+        <button onclick="bekuld()">Beküld</button>
+    </form>
+
+    <script>
+        let black =  false
+        function valtoztatt(){
+            if (black){
+                document.body.style.backgroundColor="black"
+                document.body.style.color="white"
+            }
+            else{
+                document.body.style.backgroundColor="white"
+                document.body.style.color="black"
+            }
+
+            black=!black
+        }
+
+        function valaszt(){
+            let valasztas = document.getElementById("videosok")
+            let value = valasztas.value
+
+            if(value =="TheVR"){
+                document.getElementById("kep").innerHTML='<img src="thevr.jpg" width="300px">'
+            }
+            
+            if(value =="Nessaj"){
+                document.getElementById("kep").innerHTML='<img src="nessaj.jpg" width="300px">'
+            }
+
+            if(value =="Suri"){
+                document.getElementById("kep").innerHTML='<img src="suri.jpg" width="300px">'
+            }
+
+        }
+
+        function bekuld(){
+            let nev =document.getElementById("nev").value
+            console.log(nev)
+            let szdate = document.getElementById("szdate").value
+            let datum = document.getElementById("idopontok").value
+
+            document.getElementById("szoveg").innerHTML="Név:" + nev + "Születési dátum:" + szdate + "Dátum:" + datum
+
+        }
+    </script>
+</body>
+</html>
