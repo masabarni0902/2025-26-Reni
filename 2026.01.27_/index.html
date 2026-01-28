@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,39 +7,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="dark-light" onclick="valtoztatt()"><img src="night-mode.png" alt="" style="width: 50px;"></button>
+    <button id="dark_light" onclick="valtoztat()"><img src="night-mode.png" alt="" style="width: 50px;"></button>
 
-    <h1>Videosok</h1>
+
+
+    <h1>Videósok</h1>
+    <div id="ora"></div>
+
     <select name="" id="videosok">
-        <option value="">--Válassz egyett--</option>
-        <option id="TheVR" value="TheVR">TheVR</option>
-        <option id="Nessaj" value="Nessaj">Nessaj</option>
-        <option id="Suri" value="Suri">Suri</option>
+        <option value="">--Válassz egyet--</option>
+        <option  value="TheVR">TheVR</option>
+        <option value="Nessaj">Nessaj</option>
+        <option value="Suri">Suri</option>
     </select>
-    <button onclick="valaszt()">Ok</button>
+    <button onclick="valaszt()">OK</button>
 
-    <h2>Válassztott videós</h2>
+    <h2>Valasztot videós</h2>
     <div id="kep"></div>
 
     <form action="" id="videosform">
-        <label for="nev" id="">Név:</label>
+        <label for="nev" >Név:</label>
         <input type="text" id="nev">
-        <label for="szdate">Születési dátum:</label>
+        <label for="szdate">Születési dátum: </label>
         <input type="date" id="szdate">
-        <label for="idopontok">Dátum:</label>
+        <label for="idpontok">Dátum:</label>
         <select name="" id="idopontok">
-            <option value="">--Válasz egy időpontot--</option>
-            <option value="2026.08.15">2026.08.15</option>
-            <option value="2026.08.16">2026.08.16</option>
-            <option value="2026.08.17">2026.08.17</option>
+            <option value="">--Válassz egy időpontot--</option>
+            <option value="2026-08-15">2026-08-15</option>
+            <option value="2026-08-16">2026-08-16</option>
+            <option value="2026-08-17">2026-08-17</option>
         </select>
         <button type="button" onclick="bekuld()">Beküld</button>
     </form>
+
     <div id="szoveg"></div>
 
     <script>
-        let black =  false
-        function valtoztatt(){
+        let black = false
+        function valtoztat(){
             if (black){
                 document.body.style.backgroundColor="black"
                 document.body.style.color="white"
@@ -48,59 +53,71 @@
                 document.body.style.backgroundColor="white"
                 document.body.style.color="black"
             }
-
             black=!black
         }
+
+        function digitalisOra(){
+            let most= new Date()
+
+            let ora = most.getHours()
+            let perc = most.getMinutes()
+            let mp = most.getSeconds()
+
+            if (perc < 10) perc="0" + perc
+            if (mp < 10) mp="0" + mp
+
+            document.getElementById("ora").innerHTML=ora + ":" + perc + ":" + mp
+        }
+        setInterval(digitalisOra, 100)
+        digitalisOra()
 
         function valaszt(){
             let valasztas = document.getElementById("videosok")
             let value = valasztas.value
+            
 
-            if(value =="TheVR"){
-                document.getElementById("kep").innerHTML='<img src="thevr.jpg" width="300px">'
+            console.log(valaszt)
+            if (value=="TheVR"){
+                document.getElementById("kep").innerHTML='<img src="thevr.jpg" width="300px" class="picture">'
+            }
+            if (value=="Nessaj"){
+                document.getElementById("kep").innerHTML='<img src="Nessaj.jpg" width="300px" class="picture">'
+            }
+            if (value=="Suri"){
+                document.getElementById("kep").innerHTML='<img src="Suri.jpg" width="300px" class="picture">'
             }
             
-            if(value =="Nessaj"){
-                document.getElementById("kep").innerHTML='<img src="nessaj.jpg" width="300px">'
-            }
-
-            if(value =="Suri"){
-                document.getElementById("kep").innerHTML='<img src="suri.jpg" width="300px">'
-            }
-
         }
 
         function bekuld(){
-            let nev =document.getElementById("nev").value
+            let neve = document.getElementById("nev").value
             console.log(nev)
             let szdate = document.getElementById("szdate").value
             let datum = document.getElementById("idopontok").value
 
-            if(!neve || !szdate || !datum)
-        {
-            alert("Adj meg minden adatot!")
-            return
-        }
+            if (!neve || !szdate || !datum){
+                alert("Adj meg minden adatot!")
+                return
+            }
 
-        let most = new Date()
-        let szuletesiDatum = new Date(szdate)
-        let kor = most.getFullYear()-szuletesiDatum.getFullYear
+            let most = new Date()
+            let szuletesiDatum= new Date(szdate)
+            let kor = most.getFullYear()-szuletesiDatum.getFullYear()
 
-        // let ar = 0
-        // if (kor <= 25)
-        // {
-        //     ar=2000
-        // }
-        // else if(kor >25)
-        // {
-        //     ar=4000
-        // }
+            // let ar = 0
+            // if (kor <= 25){
+            //     ar = 2000
+            // }
+            // else if (kor > 25){
+            //     ar = 4000
+            // }
 
-        
-            document.getElementById("szoveg").innerHTML="Név:" + nev + "Születési dátum:" + szdate + "Dátum:" + datum
-            // document.getElementById("szoveg").innerHTML = "Müködik"
+            let ar = kor <= 25 ? 2000 : 4000
 
+            document.getElementById("szoveg").innerHTML="Név:"+ neve + "<br>" + "Születési dátum: " + szdate + "<br>" + "Dátum: " + datum + "<br>" + "Kor:" + kor + "<br>" + "Fizetendő: " + ar
+            
         }
     </script>
+
 </body>
 </html>
