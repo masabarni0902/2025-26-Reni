@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 #ora{
-    font-family: "Robo Mano",monospace;
-    
+    font-family: "Roboto Mono", monospace;
+    background-color: black;
+    color: green;
+    font-size: 42px;
+    width: 200px;
+    text-align: center;
+    border: 3px solid green;
+    border-radius: 50px;
+    padding: 10px;
 }

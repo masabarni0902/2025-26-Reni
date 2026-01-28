@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objektum</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Autó neve:</label>
+        <input type="text" id="a_nev"> <br>
+        <label for="">Márka</label>
+        <input type="text" id="a_marka"><br>
+        <label for="">Évjárat</label>
+        <input type="text" id="evjarat"><br>
+        <button type="button" onclick="bekuld()">OK</button>
+
+        <div id="kiir"></div>
+    </form>
+
+    <script>
+        let autok=[]
+
+        function bekuld(){
+            let anev= document.getElementById("a_nev").value
+            let mnev = document.getElementById("a_marka").value
+            let aevjarat = document.getElementById("evjarat").value
+            
+
+
+            let auto ={
+                anev_k:anev,
+                mnev_k:mnev,
+                aevjarat_k:aevjarat              
+            }
+
+            autok.push(auto)
+            let szoveg = ""
+            for (let i = 0; i < autok.length; i++){
+                szoveg +=
+                autok[i].anev_k + ";" + "<br>" +
+                autok[i].mnev_k + ";" + "<br>" +
+                autok[i].aevjarat_k + ";" 
+            }
+
+            document.getElementById("kiir").innerHTML=szoveg
+        }
+    </script>
+</body>
+</html>
