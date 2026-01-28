@@ -22,20 +22,20 @@
     <div id="kep"></div>
 
     <form action="" id="videosform">
-        <label for="" id="nev">Név:</label>
+        <label for="nev" id="">Név:</label>
         <input type="text" id="nev">
-        <label for="">Születési dátum:</label>
+        <label for="szdate">Születési dátum:</label>
         <input type="date" id="szdate">
-        <label for="">Dátum:</label>
-        <input type="datum" id="datum">
+        <label for="idopontok">Dátum:</label>
         <select name="" id="idopontok">
             <option value="">--Válasz egy időpontot--</option>
             <option value="2026.08.15">2026.08.15</option>
             <option value="2026.08.16">2026.08.16</option>
             <option value="2026.08.17">2026.08.17</option>
         </select>
-        <button onclick="bekuld()">Beküld</button>
+        <button type="button" onclick="bekuld()">Beküld</button>
     </form>
+    <div id="szoveg"></div>
 
     <script>
         let black =  false
@@ -76,7 +76,29 @@
             let szdate = document.getElementById("szdate").value
             let datum = document.getElementById("idopontok").value
 
+            if(!neve || !szdate || !datum)
+        {
+            alert("Adj meg minden adatot!")
+            return
+        }
+
+        let most = new Date()
+        let szuletesiDatum = new Date(szdate)
+        let kor = most.getFullYear()-szuletesiDatum.getFullYear
+
+        // let ar = 0
+        // if (kor <= 25)
+        // {
+        //     ar=2000
+        // }
+        // else if(kor >25)
+        // {
+        //     ar=4000
+        // }
+
+        
             document.getElementById("szoveg").innerHTML="Név:" + nev + "Születési dátum:" + szdate + "Dátum:" + datum
+            // document.getElementById("szoveg").innerHTML = "Müködik"
 
         }
     </script>

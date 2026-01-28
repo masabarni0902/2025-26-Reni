@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyakorlás</title>
+</head>
+<body>
+    <label for="">Név:</label>
+    <input type="text" id="nev">
+    <label for="">Születési dátum:</label>
+    <input type="date" id="szdatum">
+    <button onclick="kuld()">Küld</button>
+
+    <div id="kiiras"></div>
+    <script>
+        function kuld()
+        {
+            let neve=document.getElementById("nev").value
+            let szDatum=document.getElementById("szdatum").value
+        
+
+        if (!neve || !szDatum)
+        {
+            alert("Adj meg minden adatot!")
+            return
+        }
+
+        let most = new Date()
+        let szuletesiDatum = new Date(szDatum)
+        let kor = most.getFullYear()-szuletesiDatum.getFullYear()
+
+        let ar = 0
+        if (kor < 18)
+        {
+            ar = 1500
+        }
+        else if (kor > 18)
+        {
+            ar = 3000
+        }
+        document.getElementById("kiiras").innerHTML="Név:" + neve +"<br>" + "Születési dátum: " + szDatum + "<br>" + "Kor:" + kor + "<br>" + "Fizett:" + ar
+        }
+    </script>
+</body>
+</html>

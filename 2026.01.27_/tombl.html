@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tömbök</title>
+</head>
+<body>
+    <label for="">Név:</label>
+    <input type="text" id="nev">
+    <label for="">Adj meg egy számot:</label>
+    <input type="number" id="szam">
+    <button onclick="bekuld()">Ok</button>
+    <div id="adatot"></div>
+    <div id="szamok"></div>
+
+    <script>
+        function bekuld()
+        {
+            let neve = document.getElementById("nev").value
+            nevek.push(neve)
+            document.getElementById("adatok").innerHTML=nevek
+        }
+
+        // let numbers = [1,3,4,23,11]
+        // function szamol()
+        // {    
+        //     let sz = 0
+        //     for (let i = 0; i <numbers.length; i++)
+        // {
+        //     document.getElementById("szamok").innerHTML = numbers[i] + ";"
+        //     sz += numbers[i]
+        // }
+        //     document.getElementById("szamok").innerHTML=sz
+        // }
+    </script>
+</body>
+</html>
