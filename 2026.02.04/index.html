@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 1.Feladat -->
+    <!-- <label for="">Név</label>
+    <input type="text" id="nev">
+    <button onclick="udvozol()"></button>
+    <div id="kiir"></div> -->
+
+    <!-- 2.Feladat -->
+    <!-- <label for="">a(cm)</label>
+    <input type="number" id="a">
+    <label for="">b (cm)</label>
+    <input type="number" id="b">
+    <button onclick="kerulet()">Kerület</button>
+    <button onclick="terulet()">Terület</button>
+    <div id="kiir"></div> -->
+
+    <!-- 3.Feladat -->
+    <!-- <button onclick="dobas()">Dobás</button>
+    <div id="dob"></div> -->
+
+    <!-- 4.Feladat -->
+    <!-- <label for="">Adj meg egy számot: </label>
+    <input type="number" id="szam">
+    <button onclick="megvizsgal()">Megad</button> -->
+
+    <!-- 5.Feladat -->
+     <!-- <label for="">Add meg a születési évet:</label>
+     <input type="number" id="evszam">
+     <button onclick="megvizsgal()">Megad</button>
+     <div id="kiir"></div> -->
+
+     <!-- 6.Feladat -->
+      <!-- <label for="">fej vagy irás:</label>
+      <input type="text" id="jatek">
+      <button onclick="jatek()">Megad</button>
+      <div id="kiir"></div> -->
+
+      <!-- 7.Feladat -->
+       <!-- <label for="">Adj meg egy évszamot: </label>
+       <input type="number" id="szokoev">
+       <button onclick="szokoev_szamol()">Megad</button>
+       <div id="kiir"></div> -->
+
+       <!-- 8.Feladat -->
+        <label for="">Add meg a hónap számát: </label>
+        <input type="number" id="honap">
+        <button onclick="honapMegad()">Megad</button>
+        <div id="kiir"></div>
+
+    <script>
+
+        // 0.Feladat
+        /*let a = pront("Kérek egy számot", 0)
+        console.log("A megadott szém", a)*/
+
+        /*let szam = Math.random()*20
+        console.leg(Math.random(szam))*/
+        
+        /*let nev = pront("Add meg a neved:")
+        prompt("Szia" ,nev)*/
+
+        //1.Feladat
+        /*function udvozol()
+        {
+            let nev = document.getElementById("nev").value
+            document.getElementById("kiir").innerHTML="Szia" + nev  
+        }*/
+
+        //2.Feladat
+        /*function kerulet()
+        {
+            let a = Number(document.getElementById("a").value)
+            let b = Number(document.getElementById("b").value)
+            parseInt(a)
+            parseInt(b)
+
+            let eredmeny = 2*(a+b)
+            document.getElementById("kiir").innerHTML="Kerület: " + eredmeny
+        }
+
+        function terulet()
+        {
+            let a = Number(document.getElementById("a").value)
+            let b = Number(document.getElementById("b").value)
+            parseInt(a)
+            parseInt(b)
+
+            let eredmeny = a*b
+            document.getElementById("kiir").innerHTML="Terület: " + eredmeny
+        }*/ 
+
+        //3.Feladat
+        // function dobas()
+        // {
+        //     let dob = Math.random()*6
+        //     if(dob > 0)
+        //     {
+        //         document.getElementById("dob").innerHTML="Dobás eredménye: " + Math.round(dob)        
+        //     }
+            
+            
+        // }
+
+        //4.Feladat
+        // function megvizsgal()
+        // {
+        //     let szam = document.getElementById("szam").value
+            
+        //     if(szam >= -30 && szam <= 40)
+        //     {
+        //         console.log("A kéttő között van.",szam);
+        //     }
+        //     else if(szam < -30)
+        //     {
+        //         console.log("Kissebb, mint -30", szam);
+        //     }
+        //     else
+        //     {
+        //         console.log("Nagyobb mint 40",szam);
+        //     }
+        // }
+
+        // 5.Feladat
+        //  function megvizsgal()
+        // {
+        //     let evszam = document.getElementById("evszam").value
+        //     let kor = 2026-evszam
+            
+        //     if(kor >= 0 && kor <= 6)
+        //     {
+        //         document.getElementById("kiir").innerHTML="Gyerek vagy: " + kor
+        //     }
+        //     else if(kor >= 7 && kor <= 18)
+        //     {
+        //         document.getElementById("kiir").innerHTML="Iskolás vagy: " + kor
+        //     }
+        //     else if(kor >= 19 && kor <= 60)
+        //     {
+        //         document.getElementById("kiir").innerHTML="Dolgozó vagy: " + kor
+        //     }
+        //     else if (kor > 60)
+        //     {
+        //         document.getElementById("kiir").innerHTML="Nyugdijas vagyok: " + kor
+        //     }
+        // }
+
+        // 6.Feladat
+        // function jatek()
+        // {
+        //     let valaszt=document.getElementById("jatek").value
+
+        //     let jatekos
+        //     let gep=Math.round(Math.random()*1)
+        //     if(valaszt=="fej")
+        //     {
+        //         jatekos=0
+        //     }
+        //     else
+        //     {
+        //         jatekos=1
+        //     }
+        //     if(jatekos==gep)
+        //     {
+        //         document.getElementById("kiir").innerHTML="Döntetlen" + jatekos + " " + gep
+        //     }
+        //     else if(jatekos == 0 && gep == 1)
+        //     {
+        //         document.getElementById("kiir").innerHTML="Gyöztél fej" + jatekos + " " + gep
+        //     }
+        //     else
+        //     {
+        //         document.getElementById("kiir").innerHTML="Vesztettél iras" + jatekos + " " + gep
+        //     }
+        // }
+
+        // 7.Feladat
+        // function szokoev_szamol()
+        // {
+        //     let szokoev=document.getElementById("szokoev").value
+
+        //     if(szokoev % 4 == 0 && szokoev % 100 != 0 || szokoev % 400 == 0)
+        //     {
+        //         document.getElementById("kiir").innerHTML="Szököév: " + szokoev
+        //     }
+        //     else
+        //     {
+        //         document.getElementById("kiir").innerHTML="Nem szököév: " +szokoev
+        //     }
+        // }
+
+        // 8.Feladat
+        function honapMegad()
+        {
+            let honap_szam=document.getElementById("hanap").value
+
+            switch(honap_szam)
+            {
+                case 1:
+                    
+                    document.getElementById("kiir").innerHTML="Január"
+                    break
+
+                case 2:
+                    
+                    document.getElementById("kiir").innerHTML="Február"
+                    break
+
+
+            }
+        }
+    </script>
+</body>
+</html>
