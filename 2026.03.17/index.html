@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Basketball Relics</title>
+</head>
+<body>
+    <header>
+        <h1>Basketball Relics</h1>
+
+        <nav>
+            <a href="#fooldal">Főoldal</a>
+            <a href="#termekek">Termékek</a>
+            <a href="#jatekosok">Játékosok</a>
+            <a href="#kapcsolat">Kapcsolat</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="fooldal">
+        <div class="hero-text">
+            <h2>Legendás kosárlabda relikviák</h2>
+            <p>Gyűjtsd össze a kosárlabda történetének legértekesebb tárgyait.</p>
+            <button>Váslárlás</button>
+        </div>
+    </section>
+
+    <section class="featured" id="termekek">
+        <h2>Kiemelt termékek</h2>
+        <div class="product-container">
+
+            <div class="card">
+                <img src="./Kepek/labda.jpg" alt="labda" class="kep">
+                <div class="card-content">
+                    <h3>Dedikált labda</h3>
+                    <p>Michael Jordan aláírással.</p>
+                    <span class="price">120 000 Ft</span>
+                    <button>Kosárba</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./Kepek/retro mez.webp" alt="retró mez" class="kep">
+                <div class="card-content">
+                    <h3>NBA mez</h3>
+                    <p>Chicago Bulls retro mez.</p>
+                    <span class="price">45 000 Ft</span>
+                    <button>Kosárba</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./Kepek/jordan.jpeg" alt="jordan" class="kep">
+                <div class="card-content">
+                    <h3>Air Jordan cipő</h3>
+                    <p>Limitált kiadás.</p>
+                    <span class="price">95 000 Ft</span>
+                    <button>Kosárba</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./Kepek/poster.jpg" alt="poster" class="kep">
+                <div class="card-content">
+                    <h3>NBA poszter</h3>
+                    <p>Legendás pillanat.</p>
+                    <span class="price">12 000 Ft</span>
+                    <button>Kosárba</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="players" id="jatekosok">
+        <h2>Legendás játékosok</h2>
+
+        <div class="player-container">
+
+            <div class="player-card">
+                <img src="./Kepek/mjordan.jpg" alt="Michael Jordan" class="kep">
+                <h3>Michael Jordan</h3>
+                <p>Az NBA történetének egyik legnagyobb játékosa.</p>
+            </div>
+
+             <div class="player-card">
+                <img src="./Kepek/kobybryant.png" alt="Koby Bryant" class="kep">
+                <h3>Koby Bryant</h3>
+                <p>5-szörös NBA bajnok és legenda.</p>
+            </div>
+
+             <div class="player-card">
+                <img src="./Kepek/lebron2.webp" alt="Lebron James" class="kep">
+                <h3>Lebron James</h3>
+                <p>Moderd kosablabda ikon.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="kapcsolat">
+        <h2>Kapcsolat</h2>
+
+        <div class="contact-container">
+            <div class="contact-info">
+            <h3>Elérhetőségek</h3>
+            <p>Email: info@basketrelics.hu</p>
+            <p>Telefon: +36 30 123 4567</p>
+            <p>Cím:Szeged, Fő utca 10</p>
+                </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d176631.75009954785!2d19.975656991973022!3d46.23290809955398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474487e22bcce54b%3A0x400c4290c1e1190!2sSzeged!5e0!3m2!1shu!2shu!4v1773746864684!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <div class="form-card">
+            <form class="contact-form">
+                <h2>Írj nekünk!</h2>
+                <div class="form-group">
+                    <label>Név:</label>
+                    <input type="text" id="nev" required>
+                </div>
+
+                <div class="form-group">
+                    <label >Email:</label>
+                    <input type="emial" id="email" required>
+                </div>
+
+               <div class="form-group">
+                <label>Telefonszám:</label>
+                <input type="tel" id="tel" required>
+               </div>
+
+               <div class="form-group">
+                <label>Üzenet:</label>
+                <textarea name="" id="uzenet" rows="4">
+
+                </textarea>
+               </div>
+               <button type="button" onclick="kuldes()">Küldés</button>
+            </form>
+
+            <div class="form-image">
+                <img src="./Kepek/nbastore.jpg" alt="nbastore" class="kep">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Basketball Relics</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
